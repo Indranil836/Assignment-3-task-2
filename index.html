@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task-2</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container" >
+        <div class="box" id="box1">
+            <h2 id="head1">Toggle-1</h2>
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi odit doloremque odio quam iste maiores reprehenderit necessitatibus. Explicabo cumque ex quam. At reprehenderit architecto doloremque, quaerat error eum, illo facilis aliquam dolorum, cumque commodi sunt accusantium minus! Vel, earum delectus iste officiis quidem, facere eius, magni esse exercitationem minima rem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi atque explicabo, sint expedita suscipit iusto est quam? Nemo, hic quaerat.</p>
+        
+        </div>
+        <div class="box" id="box2">
+            <h2 id="head2">Toggle-2</h2>
+            <p  >Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi odit doloremque odio quam iste maiores reprehenderit necessitatibus. Explicabo cumque ex quam. At reprehenderit architecto doloremque, quaerat error eum, illo facilis aliquam dolorum, cumque commodi sunt accusantium minus! Vel, earum delectus iste officiis quidem, facere eius, magni esse exercitationem minima rem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi atque explicabo, sint expedita suscipit iusto est quam? Nemo, hic quaerat.</p>
+        </div>
+        <div class="box" id="box3">
+            <h2 id="head3">Toggle-3</h2>
+            <p  >Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi odit doloremque odio quam iste maiores reprehenderit necessitatibus. Explicabo cumque ex quam. At reprehenderit architecto doloremque, quaerat error eum, illo facilis aliquam dolorum, cumque commodi sunt accusantium minus! Vel, earum delectus iste officiis quidem, facere eius, magni esse exercitationem minima rem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi atque explicabo, sint expedita suscipit iusto est quam? Nemo, hic quaerat.</p>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $('#head1').click(function() {
+              
+                $('#box2').toggleClass('disappear');
+                $('#box3').toggleClass('disappear');
+            });
+
+            $('#head2').click(function() {
+               
+                $('#box1').toggleClass('disappear');
+                $('#box3').toggleClass('disappear');
+            });
+
+            $('#head3').click(function() {
+               
+                $('#box2').toggleClass('disappear');
+                $('#box1').toggleClass('disappear');
+            });
+        });
+    </script> 
+</body>
+</html>
